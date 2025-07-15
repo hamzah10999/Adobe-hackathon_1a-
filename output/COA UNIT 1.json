@@ -1,0 +1,190 @@
+{
+  "title": "Performance of a computer",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "UNIT-1",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Laptop Computer",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "Workstation",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Mainframe",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "Server",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "Supercomputer",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Functional Units Of Computer",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Input Devices",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "Keyboard",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "Mouse",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "Output Devices",
+      "page": 15
+    },
+    {
+      "level": "H3",
+      "text": "Speakers",
+      "page": 16
+    },
+    {
+      "level": "H3",
+      "text": "Printer",
+      "page": 17
+    },
+    {
+      "level": "H3",
+      "text": "Storage Devices",
+      "page": 18
+    },
+    {
+      "level": "H3",
+      "text": "Memory  Unit",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "Arithmetic And Logic Unit",
+      "page": 23
+    },
+    {
+      "level": "H3",
+      "text": "Control Unit",
+      "page": 24
+    },
+    {
+      "level": "H3",
+      "text": "Basic Operational Concepts",
+      "page": 26
+    },
+    {
+      "level": "H3",
+      "text": "Bus Structures",
+      "page": 33
+    },
+    {
+      "level": "H3",
+      "text": "Software",
+      "page": 37
+    },
+    {
+      "level": "H3",
+      "text": "Processor clock",
+      "page": 43
+    },
+    {
+      "level": "H3",
+      "text": "Basic Performance Equation",
+      "page": 46
+    },
+    {
+      "level": "H3",
+      "text": "Performance Measurement",
+      "page": 49
+    },
+    {
+      "level": "H3",
+      "text": "and programs :",
+      "page": 53
+    },
+    {
+      "level": "H3",
+      "text": "Chapter 2: Machine Instructions",
+      "page": 53
+    },
+    {
+      "level": "H3",
+      "text": "Number Representation",
+      "page": 54
+    },
+    {
+      "level": "H3",
+      "text": "Overflow in integer arithmetic",
+      "page": 62
+    },
+    {
+      "level": "H3",
+      "text": "Memory locations and Address",
+      "page": 65
+    },
+    {
+      "level": "H3",
+      "text": "Load(Read) Operation",
+      "page": 78
+    },
+    {
+      "level": "H3",
+      "text": "Store(Write)",
+      "page": 79
+    },
+    {
+      "level": "H3",
+      "text": "Operation",
+      "page": 79
+    },
+    {
+      "level": "H3",
+      "text": "Instructions & instruction sequencing",
+      "page": 80
+    },
+    {
+      "level": "H3",
+      "text": "Basic instruction types",
+      "page": 84
+    },
+    {
+      "level": "H2",
+      "text": "Branching",
+      "page": 97
+    },
+    {
+      "level": "H3",
+      "text": "Condition Codes",
+      "page": 101
+    },
+    {
+      "level": "H3",
+      "text": "Addressing modes",
+      "page": 102
+    },
+    {
+      "level": "H3",
+      "text": "Additional Modes",
+      "page": 117
+    }
+  ]
+}
