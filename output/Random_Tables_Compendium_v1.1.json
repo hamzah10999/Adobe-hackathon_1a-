@@ -1,38 +1,44 @@
 {
-  "title": "– COMPENDIUM –",
+  "title": "RANDOM TABLES:",
+  "time_taken_seconds": 41.12,
   "outline": [
+    {
+      "level": "H3",
+      "text": "RANDOM TABLES:",
+      "page": 1
+    },
     {
       "level": "H1",
       "text": "– COMPENDIUM –",
       "page": 1
     },
     {
-      "level": "H2",
+      "level": "H3",
       "text": "by OrkishBlade",
       "page": 1
     },
     {
-      "level": "H3",
+      "level": "H5",
       "text": "Contents",
       "page": 1
     },
     {
-      "level": "H2",
-      "text": "RANDOM ARENA GAMES:  SPECTACLES OF COMBAT AND BLOOD",
-      "page": 2
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "INDIVIDUAL GLADIATORS",
       "page": 2
     },
     {
-      "level": "H1",
+      "level": "H2",
+      "text": "RANDOM ASSASSINS’ GUILDS:  KILLERS-FOR-HIRE (PAGE ONE)",
+      "page": 3
+    },
+    {
+      "level": "H5",
       "text": "GUILD ASSASSIN",
       "page": 3
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "INDIVIDUAL ASSASSIN  POISONS",
       "page": 4
     },
@@ -42,67 +48,117 @@
       "page": 5
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "SONGS",
       "page": 5
     },
     {
-      "level": "H1",
+      "level": "H2",
+      "text": "RANDOM BROTHELS:  WHAT’LL IT BE, SAILOR?",
+      "page": 6
+    },
+    {
+      "level": "H5",
       "text": "ENCOUNTERS",
       "page": 7
     },
     {
-      "level": "H3",
+      "level": "H2",
+      "text": "RANDOM CASTLES:  INHABITANTS  (PAGE TWO)",
+      "page": 8
+    },
+    {
+      "level": "H5",
       "text": "NOBLEMAN  KNIGHT  ARMORER / SMITH",
       "page": 8
     },
     {
-      "level": "H1",
-      "text": "STEWARD",
-      "page": 8
-    },
-    {
-      "level": "H3",
+      "level": "H5",
       "text": "NOBLEWOMAN  SQUIRE / VALET",
       "page": 8
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "GUARD",
+      "page": 8
+    },
+    {
+      "level": "H5",
+      "text": "ARCHER",
+      "page": 8
+    },
+    {
+      "level": "H5",
+      "text": "STEWARD",
+      "page": 8
+    },
+    {
+      "level": "H5",
       "text": "CHAPLAIN",
       "page": 8
     },
     {
-      "level": "H3",
+      "level": "H5",
       "text": "COOK",
       "page": 8
     },
     {
-      "level": "H3",
+      "level": "H2",
+      "text": "RANDOM CASTLES:  MORE INHABITANTS  (PAGE THREE)",
+      "page": 9
+    },
+    {
+      "level": "H5",
       "text": "FOOL / JESTER  GUARD CAPTAIN  HUNTSMAN",
       "page": 9
     },
     {
-      "level": "H3",
+      "level": "H5",
       "text": "TUTOR / SAGE",
       "page": 9
     },
     {
-      "level": "H1",
-      "text": "HORSEMASTER",
-      "page": 9
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "MAIDSERVANT",
       "page": 9
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "HORSEMASTER",
+      "page": 9
+    },
+    {
+      "level": "H5",
+      "text": "STABLE HAND",
+      "page": 9
+    },
+    {
+      "level": "H5",
+      "text": "KENNELMASTER",
+      "page": 9
+    },
+    {
+      "level": "H5",
+      "text": "BOWYER / FLETCHER",
+      "page": 9
+    },
+    {
+      "level": "H2",
+      "text": "RANDOM CASTLES:  DUNGEONS  (PAGE FOUR)",
+      "page": 10
+    },
+    {
+      "level": "H5",
       "text": "JAILER",
       "page": 10
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "PRISONER",
+      "page": 10
+    },
+    {
+      "level": "H5",
       "text": "TORTURER",
       "page": 10
     },
@@ -112,7 +168,7 @@
       "page": 11
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "DARK ELF",
       "page": 11
     },
@@ -127,12 +183,17 @@
       "page": 13
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "APPRENTICE",
+      "page": 13
+    },
+    {
+      "level": "H5",
       "text": "ARTISAN",
       "page": 13
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "INDIVIDUAL CULTISTS",
       "page": 14
     },
@@ -147,47 +208,47 @@
       "page": 18
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "MAGICAL MALADIES",
       "page": 18
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "HEALERS",
       "page": 18
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "HERB LORE",
       "page": 19
     },
     {
-      "level": "H1",
+      "level": "H2",
+      "text": "RANDOM ELVES:  IMMORTAL, GRACEFUL, AND MAGICAL",
+      "page": 20
+    },
+    {
+      "level": "H5",
       "text": "DARK ELF  HIGH ELF  WOOD ELF",
       "page": 20
     },
     {
-      "level": "H2",
-      "text": "RANDOM FANTASTIC BEASTS:  BEASTS OF OTHER REALMS",
-      "page": 21
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "ABERRANT BEAST  DEMONIC BEAST  INFERNAL BEAST",
       "page": 21
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "CELESTIAL BEAST  FEY BEAST  SHADOW BEAST",
       "page": 21
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "FIRE BEAST  SEA BEAST  UNDEAD BEAST",
       "page": 22
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "LEGENDARY BEAST  STORM BEAST  WINTER BEAST",
       "page": 22
     },
@@ -197,42 +258,57 @@
       "page": 24
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "FISHERFOLK  FISHING BOAT  WARM OCEAN",
       "page": 24
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "COLD OCEAN",
+      "page": 24
+    },
+    {
+      "level": "H5",
       "text": "FRESHWATER",
       "page": 24
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "WOODSMAN",
       "page": 25
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "WOOD ELF",
       "page": 25
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "FAERIEFOLK",
       "page": 26
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "HIGH ELF",
+      "page": 26
+    },
+    {
+      "level": "H5",
       "text": "TREEFOLK",
       "page": 26
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "GRAVEROBBER",
       "page": 27
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "NECROMANCER",
+      "page": 27
+    },
+    {
+      "level": "H5",
       "text": "INDIVIDUAL GOBLINS",
       "page": 28
     },
@@ -242,22 +318,32 @@
       "page": 29
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "HUNTERS  FOREST  MOUNTAINS",
       "page": 29
     },
     {
-      "level": "H1",
-      "text": "DESERT",
-      "page": 29
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "PLAINS",
       "page": 29
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "JUNGLE",
+      "page": 29
+    },
+    {
+      "level": "H5",
+      "text": "DESERT",
+      "page": 29
+    },
+    {
+      "level": "H5",
+      "text": "FROZEN LANDS",
+      "page": 29
+    },
+    {
+      "level": "H5",
       "text": "SWAMP",
       "page": 29
     },
@@ -267,12 +353,12 @@
       "page": 30
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "SNAKE CULTIST",
       "page": 30
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "LIZARDFOLK",
       "page": 30
     },
@@ -282,7 +368,7 @@
       "page": 31
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "INDIVIDUAL RETAINERS",
       "page": 31
     },
@@ -292,13 +378,13 @@
       "page": 32
     },
     {
-      "level": "H1",
-      "text": "LYCANTHROPE PACKS",
+      "level": "H5",
+      "text": "UNCOMMON LYCANTHROPES",
       "page": 32
     },
     {
-      "level": "H1",
-      "text": "UNCOMMON LYCANTHROPES",
+      "level": "H5",
+      "text": "LYCANTHROPE PACKS",
       "page": 32
     },
     {
@@ -307,7 +393,7 @@
       "page": 33
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "INDIVIDUAL SELLSWORDS",
       "page": 33
     },
@@ -317,182 +403,207 @@
       "page": 34
     },
     {
-      "level": "H3",
-      "text": "ANIMAL HANDLER/PORTER  GUIDE",
-      "page": 34
-    },
-    {
-      "level": "H3",
-      "text": "CARAVAN OWNER / TRADER",
-      "page": 34
-    },
-    {
-      "level": "H3",
+      "level": "H5",
       "text": "CARAVAN MASTER / CAPTAIN",
       "page": 34
     },
     {
-      "level": "H1",
-      "text": "GUARD",
+      "level": "H5",
+      "text": "ANIMAL HANDLER/PORTER  GUIDE",
       "page": 34
     },
     {
-      "level": "H1",
-      "text": "TRADING COMPANY",
-      "page": 35
+      "level": "H5",
+      "text": "CARAVAN OWNER / TRADER",
+      "page": 34
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "TRAVELER",
+      "page": 34
+    },
+    {
+      "level": "H5",
       "text": "SHOPKEEPER",
       "page": 35
     },
     {
-      "level": "H2",
-      "text": "RANDOM MILITARY CAMPS:  BOOTS ON THE GROUND…",
+      "level": "H5",
+      "text": "TRADING COMPANY",
+      "page": 35
+    },
+    {
+      "level": "H5",
+      "text": "MERCHANT",
+      "page": 35
+    },
+    {
+      "level": "H5",
+      "text": "SCOUT",
       "page": 36
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "COMMANDER  QUARTERMASTER",
       "page": 36
     },
     {
-      "level": "H1",
-      "text": "ARMORER",
-      "page": 36
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "SOLDIER",
       "page": 36
     },
     {
-      "level": "H3",
-      "text": "STABLE HAND / SQUIRE / VALET",
-      "page": 36
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "CAMP FOLLOWER",
       "page": 36
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "ARMORER",
+      "page": 36
+    },
+    {
+      "level": "H5",
+      "text": "STABLE HAND / SQUIRE / VALET",
+      "page": 36
+    },
+    {
+      "level": "H5",
       "text": "INDIVIDUAL SOLDIERS",
       "page": 37
     },
     {
-      "level": "H1",
+      "level": "H2",
+      "text": "RANDOM MINES:  WE DIG, DIG, DIG…",
+      "page": 38
+    },
+    {
+      "level": "H5",
       "text": "MINER",
       "page": 38
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "DWARF",
+      "page": 38
+    },
+    {
+      "level": "H2",
+      "text": "RANDOM MONASTERIES:  DISCIPLINE, STRENGTH, AND WISDOM…",
+      "page": 39
+    },
+    {
+      "level": "H5",
       "text": "INDIVIDUAL MONKS",
       "page": 39
     },
     {
-      "level": "H2",
-      "text": "RANDOM NOBLE HOUSES:  POWER PLAYERS IN THE GREAT GAME",
-      "page": 41
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "INDIVIDUAL NOBLE",
       "page": 41
     },
     {
-      "level": "H1",
-      "text": "FACIAL FEATURES  PHYSICAL TRAITS  EMOTIONS AND ATTITUDE",
+      "level": "H2",
+      "text": "NPC APPEARANCE, PERSONALITY, FAITH, AND FLAWS",
       "page": 42
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "ACCESSORIES",
       "page": 42
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "FAITH AND BELIEFS",
+      "page": 42
+    },
+    {
+      "level": "H5",
       "text": "FLAWS",
       "page": 42
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "INDIVIDUAL ORCS",
       "page": 43
     },
     {
-      "level": "H2",
-      "text": "RANDOM OUTLAW BANDS:  CRIMINALS ON THE FRINGES",
-      "page": 44
-    },
-    {
-      "level": "H1",
-      "text": "ROBBERS",
-      "page": 44
-    },
-    {
-      "level": "H1",
-      "text": "SMUGGLERS",
-      "page": 44
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "POACHERS",
       "page": 44
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "ROBBERS",
+      "page": 44
+    },
+    {
+      "level": "H5",
+      "text": "SMUGGLERS",
+      "page": 44
+    },
+    {
+      "level": "H5",
       "text": "INDIVIDUAL OUTLAW",
       "page": 44
     },
     {
-      "level": "H2",
-      "text": "QUICK PANTHEONS:  GODS AND GODDESSES IN FIVE MINUTES  OR LESS",
+      "level": "H5",
+      "text": "2.  EARTH/MOTHER  8.  GODDESS OF THE",
       "page": 45
     },
     {
-      "level": "H1",
-      "text": "KNOWLEDGE  SEA GOD",
-      "page": 45
-    },
-    {
-      "level": "H3",
-      "text": "5.  GOD OF DARKNESS/",
-      "page": 45
-    },
-    {
-      "level": "H3",
+      "level": "H5",
       "text": "GODDESS  MOON/MAGIC",
       "page": 45
     },
     {
-      "level": "H1",
-      "text": "SECRETS",
+      "level": "H5",
+      "text": "3.  GODDESS OF THE  9.  GODDESS OF THE",
       "page": 45
     },
     {
-      "level": "H1",
-      "text": "MESSENGER GOD",
-      "page": 45
-    },
-    {
-      "level": "H3",
+      "level": "H4",
       "text": "HARVEST/SEASONS  6.  GODDESS OF LOVE/  HUNT/WOODLANDS",
       "page": 45
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "KNOWLEDGE  SEA GOD",
+      "page": 45
+    },
+    {
+      "level": "H5",
+      "text": "5.  GOD OF DARKNESS/",
+      "page": 45
+    },
+    {
+      "level": "H5",
+      "text": "SECRETS",
+      "page": 45
+    },
+    {
+      "level": "H5",
       "text": "FERTILITY",
       "page": 45
     },
     {
-      "level": "H3",
+      "level": "H5",
+      "text": "11.  THE TRICKSTER/",
+      "page": 45
+    },
+    {
+      "level": "H5",
+      "text": "MESSENGER GOD",
+      "page": 45
+    },
+    {
+      "level": "H5",
       "text": "12.  THE GOD OF WAR/",
       "page": 45
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "TYRANT GOD",
       "page": 45
     },
@@ -502,97 +613,97 @@
       "page": 46
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "INDIVIDUAL PIRATES",
       "page": 46
     },
     {
-      "level": "H1",
-      "text": "PRISONER",
-      "page": 47
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM RESTLESS UNDEAD:  WALKING BONES AND WANDERING  SPIRITS",
-      "page": 48
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "CORPOREAL UNDEAD  INCORPOREAL UNDEAD",
       "page": 48
     },
     {
-      "level": "H1",
-      "text": "INDIVIDUAL WARRIORS",
-      "page": 49
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "NAME  LOCATION AND STRUCTURE  MENU",
       "page": 51
     },
     {
-      "level": "H1",
-      "text": "DECOR",
-      "page": 51
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "PROPRIETOR",
       "page": 51
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "DECOR",
+      "page": 51
+    },
+    {
+      "level": "H5",
+      "text": "ROOMS AND SERVICES",
+      "page": 51
+    },
+    {
+      "level": "H5",
+      "text": "ENTERTAINMENT",
+      "page": 51
+    },
+    {
+      "level": "H5",
+      "text": "PATRONS",
+      "page": 51
+    },
+    {
+      "level": "H2",
+      "text": "RANDOM TEMPLES:  KNEEL BEFORE THE GODS…",
+      "page": 52
+    },
+    {
+      "level": "H5",
       "text": "INDIVIDUAL PRIESTS",
       "page": 52
     },
     {
-      "level": "H2",
-      "text": "RANDOM THIEVES:  HOLD ON TO YOUR PURSE…",
-      "page": 53
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "PICKPOCKET LOOT",
       "page": 53
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "UNDEAD DENIZENS",
       "page": 54
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "LIVING DENIZENS",
+      "page": 54
+    },
+    {
+      "level": "H5",
       "text": "ALCHEMIST  NOBLE  SMITH",
       "page": 55
     },
     {
-      "level": "H1",
-      "text": "TRAVELER",
-      "page": 55
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "CRIMINAL",
       "page": 55
     },
     {
-      "level": "H1",
+      "level": "H5",
+      "text": "LAW OFFICIAL  SEER",
+      "page": 55
+    },
+    {
+      "level": "H5",
       "text": "PRIEST",
       "page": 55
     },
     {
-      "level": "H3",
+      "level": "H5",
       "text": "BARKEEP/BARMAID",
       "page": 55
     },
     {
-      "level": "H2",
-      "text": "RANDOM URBAN GANGS:  THE BLACK HEART OF THE CITY",
-      "page": 56
-    },
-    {
-      "level": "H1",
+      "level": "H5",
       "text": "INDIVIDUAL GANGMEMBERS",
       "page": 56
     },
@@ -602,13 +713,13 @@
       "page": 57
     },
     {
-      "level": "H1",
-      "text": "INDIVIDUAL INVESTIGATORS",
+      "level": "H5",
+      "text": "INDIVIDUAL GUARDS",
       "page": 57
     },
     {
-      "level": "H1",
-      "text": "INDIVIDUAL GUARDS",
+      "level": "H5",
+      "text": "INDIVIDUAL INVESTIGATORS",
       "page": 57
     },
     {
@@ -617,7 +728,7 @@
       "page": 58
     },
     {
-      "level": "H1",
+      "level": "H5",
       "text": "FAMILIARS",
       "page": 59
     }

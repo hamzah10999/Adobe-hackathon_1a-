@@ -1,5 +1,6 @@
 {
   "title": "Parsippany -Troy Hills STEM Pathways",
+  "time_taken_seconds": 0.29,
   "outline": [
     {
       "level": "H1",
@@ -7,18 +8,23 @@
       "page": 1
     },
     {
-      "level": "H2",
+      "level": "H5",
       "text": "PATHWAY OPTIONS",
       "page": 1
     },
     {
-      "level": "H1",
+      "level": "H4",
       "text": "REGULAR PATHWAYDISTINCTION PATHWAY",
       "page": 1
     },
     {
-      "level": "H1",
+      "level": "H2",
       "text": "Elective Course Offerings",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "What Colleges Say!",
       "page": 2
     }
   ]

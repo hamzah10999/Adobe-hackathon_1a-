@@ -1,5 +1,6 @@
 {
   "title": "Hamzah Ahmad",
+  "time_taken_seconds": 1.93,
   "outline": [
     {
       "level": "H1",
@@ -7,27 +8,27 @@
       "page": 1
     },
     {
-      "level": "H1",
+      "level": "H2",
       "text": "EDUCATION",
       "page": 1
     },
     {
-      "level": "H1",
+      "level": "H2",
       "text": "PROJECTS",
       "page": 1
     },
     {
-      "level": "H1",
+      "level": "H4",
       "text": "SKILLS",
       "page": 1
     },
     {
-      "level": "H1",
+      "level": "H3",
       "text": "ORGANIZATIONS",
       "page": 1
     },
     {
-      "level": "H1",
+      "level": "H3",
       "text": "LEADERSHIP AND EVENT ORGANIZATION",
       "page": 1
     }
