@@ -63,15 +63,16 @@ class PDFOutlineExtractor:
             lines.append({
                 "text": text,
                 "font_size": max(data["sizes"]),
-                "font_name": data["fonts"][0] if data["fonts"] else ""
+                "font_name": data["fonts"][0]
             })
 
-        # Merge multiline headings
+        # Merge lines if they are likely part of a multi-line heading
         merged = []
         i = 0
         while i < len(lines):
             current = lines[i]
-            while (i + 1 < len(lines) and abs(lines[i + 1]['font_size'] - current['font_size']) < 0.5):
+            while (i + 1 < len(lines) and
+                   abs(lines[i + 1]['font_size'] - current['font_size']) < 0.5):
                 current['text'] += ' ' + lines[i + 1]['text']
                 i += 1
             merged.append(current)
@@ -79,32 +80,26 @@ class PDFOutlineExtractor:
         return merged
 
     def is_valid_heading(self, text: str, font_size: float, avg_font_size: float) -> bool:
-        if not text or len(text) < 3 or len(text) > 120:
+        if not text or len(text) < 2 or len(text) > 120:
+            return False
+        if len(text.split()) > 15:
             return False
         if text.lower() in {"table of contents", "index"}:
             return False
-        if len(text.split()) > 16 or text.islower():
+        if text.islower():
             return False
-        if re.fullmatch(r'\d{1,2}[-/]\d{1,2}([-/]\d{2,4})?', text):
-            return False  # Avoid dates
-        if re.fullmatch(r'\d{1,3}$', text.strip()):
-            return False  # Avoid lone numbers
         if font_size < avg_font_size * 0.85:
             return False
-        if sum(1 for w in text.lower().split() if w in self.stopwords) > 5:
+        if re.search(r'[.!?]{2,}', text):
             return False
-        if self._has_garbled(text):
+        if sum(1 for w in text.lower().split() if w in self.stopwords) > 4:
             return False
         return True
-
-    def _has_garbled(self, text: str) -> bool:
-        # Repeated character groups or gibberish
-        return bool(re.search(r'(.)\1{3,}', text)) or bool(re.search(r'\b(\w+)\b\s+\1\b', text, re.IGNORECASE))
 
     def classify_heading_level(self, font_size: float, ranked_sizes: List[float]) -> Optional[str]:
         try:
             index = ranked_sizes.index(font_size)
-            if index < 4:  # Only H1 to H4
+            if index < 5:
                 return f"H{index + 1}"
         except ValueError:
             return None
@@ -116,9 +111,6 @@ class PDFOutlineExtractor:
             if self.is_valid_heading(text, block["font_size"], block["font_size"]):
                 return text
         return "Untitled Document"
-
-    def is_bold_or_italic(self, font_name: str) -> bool:
-        return any(kw in font_name.lower() for kw in ['bold', 'italic', 'oblique', 'underline'])
 
     def extract_outline(self, pdf_path: str) -> Dict:
         logger.info(f"Processing: {pdf_path}")
@@ -133,17 +125,12 @@ class PDFOutlineExtractor:
         outline = []
 
         for block in blocks:
-            text = block["text"].strip()
+            text = block["text"]
             size = block["font_size"]
-            font = block["font_name"]
-
             if text in seen:
                 continue
             if not self.is_valid_heading(text, size, avg_font_size):
                 continue
-            if not self.is_bold_or_italic(font) and size < avg_font_size * 1.1:
-                continue
-
             level = self.classify_heading_level(size, ranked_sizes)
             if level:
                 outline.append({
@@ -167,7 +154,7 @@ class PDFOutlineExtractor:
 
         pdfs = list(input_path.glob("*.pdf"))
         if not pdfs:
-            logger.warning("No PDFs found.")
+            logger.warning("No PDF files found.")
             return
 
         for pdf in pdfs:
@@ -184,7 +171,8 @@ class PDFOutlineExtractor:
                     "time_taken_seconds": 0,
                     "outline": []
                 }
-                with open(output_path / f"{pdf.stem}.json", "w", encoding="utf-8") as f:
+                output_file = output_path / f"{pdf.stem}.json"
+                with open(output_file, "w", encoding="utf-8") as f:
                     json.dump(error_output, f, ensure_ascii=False, indent=2)
 
 
@@ -194,7 +182,6 @@ def main():
     if not os.path.exists(input_dir):
         logger.error(f"Input directory {input_dir} not found.")
         sys.exit(1)
-
     extractor = PDFOutlineExtractor()
     extractor.process_directory(input_dir, output_dir)
     logger.info("Finished processing all PDFs.")
