@@ -1,8 +1,9 @@
 {
   "title": "Application form for grant of LTC advance",
+  "time_taken_seconds": 0.09,
   "outline": [
     {
-      "level": "H3",
+      "level": "H1",
       "text": "Application form for grant of LTC advance",
       "page": 1
     }

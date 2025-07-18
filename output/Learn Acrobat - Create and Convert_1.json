@@ -1,49 +1,30 @@
 {
   "title": "What’s the best way to create a PDF?",
+  "time_taken_seconds": 2.57,
   "outline": [
     {
-      "level": "H2",
+      "level": "H1",
+      "text": "What’s the best way to create a PDF?",
+      "page": 2
+    },
+    {
+      "level": "H3",
       "text": "PDF creation methods by file type",
       "page": 2
     },
     {
-      "level": "H2",
+      "level": "H4",
       "text": "Balance PDF file size and quality",
       "page": 5
     },
     {
-      "level": "H1",
-      "text": "Convert a file to PDF using Acrobat menu",
+      "level": "H2",
+      "text": "Convert a file to PDF using Acrobat menu commands",
       "page": 7
     },
     {
-      "level": "H2",
-      "text": "Drag-and-drop to create PDFs",
-      "page": 9
-    },
-    {
-      "level": "H2",
-      "text": "Convert clipboard content to PDF",
-      "page": 10
-    },
-    {
-      "level": "H2",
-      "text": "Create a blank PDF",
-      "page": 11
-    },
-    {
-      "level": "H2",
-      "text": "Create multiple PDFs from multiple files",
-      "page": 12
-    },
-    {
-      "level": "H2",
-      "text": "About Acrobat PDFMaker",
-      "page": 12
-    },
-    {
       "level": "H1",
-      "text": "Using Create PDF cloud service for PDF",
+      "text": "Using Create PDF cloud service for PDF conversion",
       "page": 13
     },
     {
@@ -52,34 +33,9 @@
       "page": 14
     },
     {
-      "level": "H2",
-      "text": "Show or activate PDFMaker in Microsoft Office and Lotus Notes",
-      "page": 14
-    },
-    {
-      "level": "H2",
-      "text": "Convert a file to PDF",
-      "page": 15
-    },
-    {
-      "level": "H2",
+      "level": "H4",
       "text": "Create a PDF and share via Outlook",
       "page": 16
-    },
-    {
-      "level": "H2",
-      "text": "Create a PDF as an email attachment",
-      "page": 18
-    },
-    {
-      "level": "H2",
-      "text": "Create a PDF and send it for review",
-      "page": 19
-    },
-    {
-      "level": "H2",
-      "text": "Create a PDF and run an action",
-      "page": 19
     },
     {
       "level": "H1",
@@ -87,28 +43,13 @@
       "page": 20
     },
     {
-      "level": "H2",
-      "text": "Settings tab of the Adobe PDFMaker preferences",
-      "page": 20
-    },
-    {
-      "level": "H2",
-      "text": "Security tab of the Adobe PDFMaker preferences",
-      "page": 21
-    },
-    {
       "level": "H1",
-      "text": "Excel files to PDF",
+      "text": "Convert Microsoft Word, PowerPoint, and Excel files to PDF",
       "page": 22
     },
     {
-      "level": "H2",
+      "level": "H3",
       "text": "Convert Excel files to PDF",
-      "page": 22
-    },
-    {
-      "level": "H2",
-      "text": "Convert Word and PowerPoint files to PDF",
       "page": 22
     },
     {
@@ -117,29 +58,9 @@
       "page": 23
     },
     {
-      "level": "H2",
-      "text": "Specify whether email messages become merged PDFs or PDF",
+      "level": "H4",
+      "text": "Convert an open email message to PDF (Outlook)",
       "page": 23
-    },
-    {
-      "level": "H2",
-      "text": "Portfolios",
-      "page": 23
-    },
-    {
-      "level": "H2",
-      "text": "Convert email messages to a new PDF",
-      "page": 24
-    },
-    {
-      "level": "H2",
-      "text": "Add email messages or folders to an existing PDF",
-      "page": 24
-    },
-    {
-      "level": "H2",
-      "text": "Convert email folders to a new PDF",
-      "page": 25
     },
     {
       "level": "H1",
@@ -152,13 +73,8 @@
       "page": 27
     },
     {
-      "level": "H2",
-      "text": "Email options for PDF mail merges",
-      "page": 28
-    },
-    {
-      "level": "H2",
-      "text": "Convert Visio files",
+      "level": "H1",
+      "text": "Convert Visio files to PDF (Acrobat Pro)",
       "page": 29
     }
   ]
