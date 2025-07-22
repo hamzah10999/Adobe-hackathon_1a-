@@ -1,0 +1,51 @@
+{
+  "title": "GuidetoJapanesetypesettingwithLTX",
+  "time_taken_seconds": 0.99,
+  "outline": [
+    {
+      "level": "H1",
+      "text": "GuidetoJapanesetypesettingwithLTX",
+      "page": 0
+    },
+    {
+      "level": "H4",
+      "text": "1Shortintroduction:usingLuaLTX",
+      "page": 0
+    },
+    {
+      "level": "H2",
+      "text": "2Relativelystablealternative:upLTX",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "3UsinglegacypLTX",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "4DifferencesbetweenWesternandJapanesetypesetting",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "5Furtherreadings",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "6JapanesedeliverablesinTXLive E",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "References",
+      "page": 8
+    },
+    {
+      "level": "H2",
+      "text": "ACodeGallery—acceptableJapanesetypesettingresults",
+      "page": 9
+    }
+  ]
+}

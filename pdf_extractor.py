@@ -97,6 +97,10 @@ class PDFOutlineExtractor:
         if re.search(r'[.!?]{2,}', text):
             return False
 
+        # Match common heading numbering patterns like "1.", "1.1", "2.3.4"
+        if re.match(r'^(\d+\.)+\s*\S+', text.strip()):
+            return True
+
         # For Japanese, Chinese, Korean
         if lang in {"ja", "zh", "ko"}:
             return len(text) < 40
