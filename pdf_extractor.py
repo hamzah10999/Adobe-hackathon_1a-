@@ -19,19 +19,10 @@ logger = logging.getLogger(__name__)
 
 
 class PDFOutlineExtractor:
-    def __init__(self):
-        self.stopwords = {
-            'the', 'and', 'that', 'this', 'with', 'from', 'for', 'was', 'are',
-            'have', 'has', 'but', 'also', 'which', 'their', 'there', 'they',
-            'will', 'would', 'could', 'should', 'been', 'being', 'does', 'did',
-            'can', 'may', 'might', 'must', 'shall', 'through', 'during', 'before',
-            'after', 'above', 'below', 'between', 'among', 'within', 'without'
-        }
-
     def extract_text_blocks(self, pdf_path: str) -> List[Dict]:
         blocks = []
         with pdfplumber.open(pdf_path) as pdf:
-            for page_num, page in enumerate(pdf.pages, 1):
+            for page_num, page in enumerate(pdf.pages):
                 if not page.chars:
                     continue
                 lines = self._group_and_merge_lines(page.chars)
@@ -66,7 +57,6 @@ class PDFOutlineExtractor:
                 "font_name": data["fonts"][0]
             })
 
-        # Merge lines if they are likely part of a multi-line heading
         merged = []
         i = 0
         while i < len(lines):
@@ -79,7 +69,7 @@ class PDFOutlineExtractor:
             i += 1
         return merged
 
-    def is_valid_heading(self, text: str, font_size: float, avg_font_size: float) -> bool:
+    def is_valid_heading(self, text: str, font_size: float, avg_font_size: float, font_name: str) -> bool:
         if not text or len(text) < 2 or len(text) > 120:
             return False
         if len(text.split()) > 15:
@@ -92,29 +82,38 @@ class PDFOutlineExtractor:
             return False
         if re.search(r'[.!?]{2,}', text):
             return False
-        if sum(1 for w in text.lower().split() if w in self.stopwords) > 4:
-            return False
+
+        # Boost detection for bold or uppercase text
+        boost = 0
+        if "bold" in font_name.lower():
+            boost += 0.3
+        if text.isupper():
+            boost += 0.3
+
+        # Allow more stopword-like text if boost is high
         return True
 
     def classify_heading_level(self, font_size: float, ranked_sizes: List[float]) -> Optional[str]:
         try:
             index = ranked_sizes.index(font_size)
-            if index < 5:
+            if index < 4:
                 return f"H{index + 1}"
         except ValueError:
             return None
         return None
 
     def extract_title(self, blocks: List[Dict]) -> str:
-        for block in blocks[:10]:
-            text = block["text"]
-            if self.is_valid_heading(text, block["font_size"], block["font_size"]):
-                return text
-        return "Untitled Document"
+        if not blocks:
+            return "Untitled Document"
+        first_page_blocks = [b for b in blocks if b["page"] == 0]
+        if not first_page_blocks:
+            return "Untitled Document"
+        sorted_blocks = sorted(first_page_blocks, key=lambda b: b["font_size"], reverse=True)
+        return sorted_blocks[0]["text"].strip()
 
     def extract_outline(self, pdf_path: str) -> Dict:
         logger.info(f"Processing: {pdf_path}")
-        start_time = time.time()
+        start_time = time.perf_counter()
         blocks = self.extract_text_blocks(pdf_path)
 
         font_sizes = [b["font_size"] for b in blocks]
@@ -127,9 +126,10 @@ class PDFOutlineExtractor:
         for block in blocks:
             text = block["text"]
             size = block["font_size"]
+            font = block["font_name"]
             if text in seen:
                 continue
-            if not self.is_valid_heading(text, size, avg_font_size):
+            if not self.is_valid_heading(text, size, avg_font_size, font):
                 continue
             level = self.classify_heading_level(size, ranked_sizes)
             if level:
@@ -140,7 +140,7 @@ class PDFOutlineExtractor:
                 })
                 seen.add(text)
 
-        duration = round(time.time() - start_time, 2)
+        duration = round(time.perf_counter() - start_time, 2)
         return {
             "title": self.extract_title(blocks),
             "time_taken_seconds": duration,
@@ -166,14 +166,12 @@ class PDFOutlineExtractor:
                 logger.info(f"Saved: {output_file.name}")
             except Exception as e:
                 logger.error(f"Failed to process {pdf.name}: {e}")
-                error_output = {
-                    "title": f"Error processing {pdf.name}",
-                    "time_taken_seconds": 0,
-                    "outline": []
-                }
-                output_file = output_path / f"{pdf.stem}.json"
-                with open(output_file, "w", encoding="utf-8") as f:
-                    json.dump(error_output, f, ensure_ascii=False, indent=2)
+                with open(output_path / f"{pdf.stem}.json", "w", encoding="utf-8") as f:
+                    json.dump({
+                        "title": f"Error processing {pdf.name}",
+                        "time_taken_seconds": 0,
+                        "outline": []
+                    }, f, ensure_ascii=False, indent=2)
 
 
 def main():

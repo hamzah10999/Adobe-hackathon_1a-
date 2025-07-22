@@ -1,191 +1,186 @@
 {
   "title": "UNIT-1",
-  "time_taken_seconds": 5.36,
+  "time_taken_seconds": 4.04,
   "outline": [
     {
       "level": "H1",
       "text": "UNIT-1",
-      "page": 1
+      "page": 0
     },
     {
       "level": "H3",
       "text": "Laptop Computer",
-      "page": 5
+      "page": 4
     },
     {
       "level": "H3",
       "text": "Workstation",
-      "page": 6
+      "page": 5
     },
     {
       "level": "H3",
       "text": "Mainframe",
-      "page": 7
+      "page": 6
     },
     {
       "level": "H4",
       "text": "Server",
-      "page": 8
+      "page": 7
     },
     {
       "level": "H3",
       "text": "Supercomputer",
-      "page": 9
+      "page": 8
     },
     {
       "level": "H3",
       "text": "Functional Units Of Computer",
-      "page": 10
+      "page": 9
     },
     {
       "level": "H3",
       "text": "Input Devices",
-      "page": 12
+      "page": 11
     },
     {
       "level": "H3",
       "text": "Keyboard",
-      "page": 13
+      "page": 12
     },
     {
       "level": "H3",
       "text": "Mouse",
-      "page": 14
+      "page": 13
     },
     {
       "level": "H3",
       "text": "Output Devices",
-      "page": 15
+      "page": 14
     },
     {
       "level": "H3",
       "text": "Speakers",
-      "page": 16
+      "page": 15
     },
     {
       "level": "H3",
       "text": "Printer",
-      "page": 17
+      "page": 16
     },
     {
       "level": "H3",
       "text": "Storage Devices",
-      "page": 18
+      "page": 17
     },
     {
       "level": "H3",
       "text": "Memory  Unit",
-      "page": 19
+      "page": 18
     },
     {
       "level": "H4",
       "text": "Arithmetic And Logic Unit",
-      "page": 23
+      "page": 22
     },
     {
       "level": "H4",
       "text": "Control Unit",
-      "page": 24
+      "page": 23
     },
     {
       "level": "H3",
       "text": "Basic Operational Concepts",
-      "page": 26
+      "page": 25
     },
     {
       "level": "H3",
       "text": "Bus Structures",
-      "page": 33
+      "page": 32
     },
     {
       "level": "H4",
       "text": "Software",
-      "page": 37
+      "page": 36
     },
     {
       "level": "H4",
       "text": "Performance of a computer",
-      "page": 39
+      "page": 38
     },
     {
       "level": "H4",
       "text": "Processor clock",
-      "page": 43
+      "page": 42
     },
     {
       "level": "H4",
       "text": "Basic Performance Equation",
-      "page": 46
+      "page": 45
     },
     {
       "level": "H3",
       "text": "Performance Measurement",
-      "page": 49
+      "page": 48
     },
     {
       "level": "H3",
       "text": "Chapter 2: Machine Instructions : and programs",
-      "page": 53
+      "page": 52
     },
     {
       "level": "H3",
       "text": "Number Representation",
-      "page": 54
+      "page": 53
     },
     {
       "level": "H4",
       "text": "Overflow in integer arithmetic",
-      "page": 62
+      "page": 61
     },
     {
       "level": "H4",
       "text": "Memory locations and Address",
-      "page": 65
-    },
-    {
-      "level": "H5",
-      "text": "Memory operations",
-      "page": 77
+      "page": 64
     },
     {
       "level": "H3",
       "text": "Load(Read) Operation",
-      "page": 78
+      "page": 77
     },
     {
       "level": "H3",
       "text": "Store(Write) Operation",
-      "page": 79
+      "page": 78
     },
     {
       "level": "H4",
       "text": "Instructions & instruction sequencing",
-      "page": 80
+      "page": 79
     },
     {
       "level": "H4",
       "text": "Basic instruction types",
-      "page": 84
+      "page": 83
     },
     {
       "level": "H2",
       "text": "Branching",
-      "page": 97
+      "page": 96
     },
     {
       "level": "H3",
       "text": "Condition Codes",
-      "page": 101
+      "page": 100
     },
     {
       "level": "H3",
       "text": "Addressing modes",
-      "page": 102
+      "page": 101
     },
     {
       "level": "H4",
       "text": "Additional Modes",
-      "page": 117
+      "page": 116
     }
   ]
 }
