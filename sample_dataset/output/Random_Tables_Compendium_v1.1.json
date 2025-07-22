@@ -1,6 +1,6 @@
 {
   "title": "– COMPENDIUM –",
-  "time_taken_seconds": 28.51,
+  "time_taken_seconds": 28.39,
   "outline": [
     {
       "level": "H3",
@@ -64,11 +64,6 @@
     },
     {
       "level": "H2",
-      "text": "RANDOM CAVERNS:  INTO THE DARK…",
-      "page": 10
-    },
-    {
-      "level": "H2",
       "text": "QUICK CITY-BUILDING:  MINIMAL URBAN PLANNING",
       "page": 11
     },
@@ -84,11 +79,6 @@
     },
     {
       "level": "H2",
-      "text": "RANDOM DESERTS:  ACROSS THE WASTELAND…",
-      "page": 14
-    },
-    {
-      "level": "H2",
       "text": "RANDOM  FLAME-SCORCHED  DESERTS:  DESERT VARIANT (PAGE  TWO)",
       "page": 15
     },
@@ -96,11 +86,6 @@
       "level": "H2",
       "text": "RANDOM  SHADOW-TOUCHED  DESERTS:  DESERT VARIANT (PAGE  THREE)",
       "page": 16
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM DISEASES:  BRING OUT YOUR DEAD…",
-      "page": 17
     },
     {
       "level": "H2",
@@ -144,58 +129,8 @@
     },
     {
       "level": "H2",
-      "text": "RANDOM HUNTING:  GONE A-HUNTING…",
-      "page": 28
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM JUNGLES:  WELCOME TO THE JUNGLE…",
-      "page": 29
-    },
-    {
-      "level": "H2",
       "text": "RANDOM KNIGHTS:  SWORN SWORDS",
       "page": 30
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM LYCANTHROPES:  BEWARE THE FULL MOON…",
-      "page": 31
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM MERCENARY TROOPS:  GOLD FOR BLOOD…",
-      "page": 32
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM MERCHANT CARAVANS:  OVERLAND SHIPPING…",
-      "page": 33
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM MERCHANT GUILDS:  WE HAVE WHAT YOU NEED…",
-      "page": 34
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM MILITARY CAMPS:  BOOTS ON THE GROUND…",
-      "page": 35
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM MILITARY COMPANIES:  WE HAVE MET THE ENEMY…",
-      "page": 36
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM MINES:  WE DIG, DIG, DIG…",
-      "page": 37
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM MONASTERIES:  DISCIPLINE, STRENGTH, AND WISDOM…",
-      "page": 38
     },
     {
       "level": "H2",
@@ -254,23 +189,8 @@
     },
     {
       "level": "H2",
-      "text": "RANDOM SERIAL KILLERS:  “I WAS BORN WITH THE DEVIL  IN ME…”",
-      "page": 49
-    },
-    {
-      "level": "H2",
       "text": "RANDOM DOCKSIDE TAVERNS:  WHAT DO YOU DO WITH A DRUNKEN  SAILOR?",
       "page": 50
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM TEMPLES:  KNEEL BEFORE THE GODS…",
-      "page": 51
-    },
-    {
-      "level": "H2",
-      "text": "RANDOM THIEVES:  HOLD ON TO YOUR PURSE…",
-      "page": 52
     },
     {
       "level": "H2",

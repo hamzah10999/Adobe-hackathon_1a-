@@ -5,13 +5,16 @@ import sys
 import json
 import time
 import logging
+import unicodedata
 from pathlib import Path
 from typing import List, Dict, Optional
 
 try:
     import pdfplumber
+    from langdetect import detect, DetectorFactory
+    DetectorFactory.seed = 42
 except ImportError:
-    print("Missing required module: pdfplumber")
+    print("Missing required module: pdfplumber or langdetect")
     sys.exit(1)
 
 logging.basicConfig(level=logging.INFO)
@@ -19,18 +22,35 @@ logger = logging.getLogger(__name__)
 
 
 class PDFOutlineExtractor:
+    def normalize_text(self, text: str) -> str:
+        return unicodedata.normalize("NFKC", text).strip()
+
+    def detect_language(self, text: str) -> str:
+        try:
+            return detect(text)
+        except Exception:
+            return "unknown"
+
     def extract_text_blocks(self, pdf_path: str) -> List[Dict]:
         blocks = []
         with pdfplumber.open(pdf_path) as pdf:
+            default_lang = "unknown"
             for page_num, page in enumerate(pdf.pages):
                 if not page.chars:
                     continue
                 lines = self._group_and_merge_lines(page.chars)
-                for line in lines:
+                for idx, line in enumerate(lines):
+                    text = self.normalize_text(line["text"])
+                    if page_num == 0 and idx < 3:
+                        lang = self.detect_language(text)
+                        default_lang = lang
+                    else:
+                        lang = default_lang
                     blocks.append({
-                        "text": line["text"],
+                        "text": text,
                         "font_size": line["font_size"],
                         "font_name": line["font_name"],
+                        "lang": lang,
                         "page": page_num
                     })
         return blocks
@@ -69,28 +89,31 @@ class PDFOutlineExtractor:
             i += 1
         return merged
 
-    def is_valid_heading(self, text: str, font_size: float, avg_font_size: float, font_name: str) -> bool:
+    def is_valid_heading(self, text: str, font_size: float, avg_font_size: float, font_name: str, lang: str) -> bool:
         if not text or len(text) < 2 or len(text) > 120:
-            return False
-        if len(text.split()) > 15:
-            return False
-        if text.lower() in {"table of contents", "index"}:
-            return False
-        if text.islower():
             return False
         if font_size < avg_font_size * 0.85:
             return False
         if re.search(r'[.!?]{2,}', text):
             return False
 
-        # Boost detection for bold or uppercase text
-        boost = 0
-        if "bold" in font_name.lower():
-            boost += 0.3
-        if text.isupper():
-            boost += 0.3
+        # For Japanese, Chinese, Korean
+        if lang in {"ja", "zh", "ko"}:
+            return len(text) < 40
 
-        # Allow more stopword-like text if boost is high
+        # For Latin-based languages
+        if text.lower() in {"table of contents", "index"}:
+            return False
+        if text.islower():
+            return False
+        if len(text.split()) > 15:
+            return False
+
+        if "bold" in font_name.lower():
+            return True
+        if text.isupper():
+            return True
+
         return True
 
     def classify_heading_level(self, font_size: float, ranked_sizes: List[float]) -> Optional[str]:
@@ -127,9 +150,10 @@ class PDFOutlineExtractor:
             text = block["text"]
             size = block["font_size"]
             font = block["font_name"]
+            lang = block["lang"]
             if text in seen:
                 continue
-            if not self.is_valid_heading(text, size, avg_font_size, font):
+            if not self.is_valid_heading(text, size, avg_font_size, font, lang):
                 continue
             level = self.classify_heading_level(size, ranked_sizes)
             if level:
